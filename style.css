@@ -1,0 +1,99 @@
+/* General Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(228, 226, 226, 0.74);  /* Page background color is white */
+    color: #333;
+}
+
+/* Container to center everything */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;  /* Added space on left and right */
+}
+
+/* Content Section */
+.content {
+    width: 100%;
+    max-width: 900px;  /* Maximum width for readability */
+    padding: 20px;
+    background-color: #ffffff;  /* Light background color for the content */
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+}
+
+header h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 26px;
+    color: #0056b3;
+    margin-top: 20px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Logo in the upper left corner */
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 28px;  /* Slightly smaller header font on mobile */
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .content p {
+        font-size: 14px;  /* Smaller paragraph font for mobile */
+    }
+}
